@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穗穗春暖｜Suisuispring - 設計報價指引</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'iron': '#4A4D4A',     /* 深鐵灰色 */
+                        'minimal': '#FCFCFC',  /* 極簡白 */
+                        'oatmeal': '#F4EFEA',  /* 燕麥米色 */
+                        'tex-gray': '#E6E6E6', /* 質感淺灰 */
+                        'smog-green': '#8C9C90',/* 霧霾綠 */
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FCFCFC;
+            color: #4A4D4A;
+        }
+        
+        /* 隱藏捲軸但可滾動 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FCFCFC; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E6E6E6; 
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8C9C90; 
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 虛線點陣引導線 */
+        .dot-leader {
+            flex-grow: 1;
+            border-bottom: 1px dotted #E6E6E6;
+            margin: 0 12px;
+            position: relative;
+            top: -6px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-smog-green selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="relative pt-24 pb-16 px-6 md:px-12 max-w-5xl mx-auto text-center fade-in-up">
+        <div class="inline-block mb-4">
+            <span class="block w-12 h-[1px] bg-smog-green mx-auto mb-6"></span>
+        </div>
+        <h1 class="font-serif text-3xl md:text-4xl font-bold tracking-widest text-iron mb-2">穗穗春暖</h1>
+        <h2 class="font-display text-xl md:text-2xl italic tracking-widest text-smog-green mb-8">Suisuispring</h2>
+        <p class="font-sans text-sm md:text-base font-light tracking-widest text-iron/70 max-w-xl mx-auto leading-relaxed">
+            "Crafting gentle warmth within precise pixels."<br>
+            在精確的像素裡，編織靈感的麥穗，種下溫柔的春光。
+        </p>
+        <div class="mt-12">
+            <h3 class="font-serif text-xl font-medium tracking-widest border-b border-tex-gray inline-block pb-2">DESIGN PRICE GUIDE</h3>
+        </div>
+    </header>
+
+    <!-- Pricing Content -->
+    <main class="max-w-5xl mx-auto px-6 md:px-12 pb-24 space-y-12">
+
+        <!-- Category Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- 周邊應援 -->
+            <section class="bg-white rounded-xl border border-tex-gray shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden fade-in-up">
+                <div class="bg-oatmeal px-6 py-4 flex items-center gap-3">
+                    <i data-lucide="ticket" class="w-5 h-5 text-smog-green"></i>
+                    <h3 class="font-serif text-lg font-medium tracking-wide">周邊應援</h3>
+                </div>
+                <div class="p-6 space-y-5">
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">小卡 / 方卡</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$300 - $500 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">明信片 / 票根 / 書籤 / 人生四格</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$600 - $800 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">應援手幅 / 毛巾</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$700 - $1,000 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">旗幟 / 大屏 / 簽名打卡版</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$1,500 - $2,000 <span class="text-xs text-iron/50 font-sans">/款</span></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 出版裝幀 -->
+            <section class="bg-white rounded-xl border border-tex-gray shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden fade-in-up">
+                <div class="bg-oatmeal px-6 py-4 flex items-center gap-3">
+                    <i data-lucide="book-open" class="w-5 h-5 text-smog-green"></i>
+                    <h3 class="font-serif text-lg font-medium tracking-wide">出版裝幀</h3>
+                </div>
+                <div class="p-6 space-y-5">
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">網路書封</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$600 - $800 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <div class="flex flex-col">
+                            <span class="text-sm md:text-base font-medium">實體出版書封</span>
+                            <span class="text-xs text-iron/60 mt-1">含封面、封底、書背，具備精準出血設定</span>
+                        </div>
+                        <div class="dot-leader hidden sm:block"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green whitespace-nowrap">$2,000 - $2,500 <span class="text-xs text-iron/50 font-sans">/款</span></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 活動與商業主視覺 -->
+            <section class="bg-white rounded-xl border border-tex-gray shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden fade-in-up">
+                <div class="bg-oatmeal px-6 py-4 flex items-center gap-3">
+                    <i data-lucide="layout" class="w-5 h-5 text-smog-green"></i>
+                    <h3 class="font-serif text-lg font-medium tracking-wide">活動 / 商業視覺</h3>
+                </div>
+                <div class="p-6 space-y-5">
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">海報 / 看板 <span class="text-xs text-iron/60 ml-2 font-normal">(活動主視覺)</span></span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$1,800 - $2,000 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">促銷 / 品牌宣傳 DM</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$1,000 - $1,200 <span class="text-xs text-iron/50 font-sans">/面</span></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 數位與其他設計 -->
+            <section class="bg-white rounded-xl border border-tex-gray shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden fade-in-up">
+                <div class="bg-oatmeal px-6 py-4 flex items-center gap-3">
+                    <i data-lucide="laptop" class="w-5 h-5 text-smog-green"></i>
+                    <h3 class="font-serif text-lg font-medium tracking-wide">數位社群 / 其他</h3>
+                </div>
+                <div class="p-6 space-y-5">
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">IG / FB 單張貼文圖</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$600 - $800 <span class="text-xs text-iron/50 font-sans">/張</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">簡報美化排版 <span class="text-xs text-iron/60 ml-2 font-normal">(PPT/Canva)</span></span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$150 - $250 <span class="text-xs text-iron/50 font-sans">/頁</span></span>
+                    </div>
+                    <div class="flex items-end justify-between">
+                        <span class="text-sm md:text-base font-medium">資訊圖表設計 (Infographic)</span>
+                        <div class="dot-leader"></div>
+                        <span class="text-sm md:text-base font-serif text-smog-green">$3,000 - $5,000 <span class="text-xs text-iron/50 font-sans">/張</span></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Terms & Conditions Link Button -->
+        <section class="mt-16 flex justify-center fade-in-up">
+            <a href="https://reurl.cc/180M98" target="_blank" class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-oatmeal/60 border border-tex-gray rounded-full text-iron hover:bg-smog-green hover:text-white hover:border-smog-green transition-all duration-300 shadow-sm hover:shadow-md">
+                <span class="font-serif font-medium tracking-wide text-sm md:text-base">更多委託與合作須知請點擊查看</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-tex-gray bg-minimal pt-12 pb-16 text-center fade-in-up">
+        <h4 class="font-serif text-xl font-bold tracking-widest text-iron mb-8">LET'S CREATE TOGETHER</h4>
+        
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6 mb-12 px-6">
+            <!-- Email Button -->
+            <a href="mailto:suisuispring58@gmail.com" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 border border-tex-gray rounded-full text-sm text-iron/80 hover:border-smog-green hover:text-smog-green hover:bg-oatmeal/30 transition-colors">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                <span class="font-medium tracking-wider">EMAIL</span>
+            </a>
+            
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/suisuispring_?igsh=dXR2dWJjMW41aG84&utm_source=qr" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 border border-tex-gray rounded-full text-sm text-iron/80 hover:border-smog-green hover:text-smog-green hover:bg-oatmeal/30 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                <span class="font-medium tracking-wider">INSTAGRAM</span>
+            </a>
+            
+            <!-- LINE Button -->
+            <a href="https://lin.ee/oj9Hnwx" target="_blank" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 border border-tex-gray rounded-full text-sm text-iron/80 hover:border-smog-green hover:text-smog-green hover:bg-oatmeal/30 transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span class="font-medium tracking-wider">LINE</span>
+            </a>
+        </div>
+
+        <p class="text-xs text-iron/40 font-display tracking-widest uppercase">
+            © 2026 SUISUISPRING PORTFOLIO. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // 初始化 Lucide 圖標
+        lucide.createIcons();
+
+        // 簡單的進入動畫觀察器
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.fade-in-up').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
